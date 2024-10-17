@@ -4,8 +4,8 @@ body{
     align-items: center;
     height: 100%;
     width: 100%;
-    background-color: skyblue;
-    background-image: url('../images/background.png');
+    background-image: url('./images/bg.png');
+
 }
 .calculator{
     margin:20px auto;
