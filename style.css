@@ -5,10 +5,10 @@ body{
     height: 100%;
     width: 100%;
     background-color: skyblue;
-    background-image: url('../images/ ');
+    background-image: url('../images/background.png');
 }
 .calculator{
-    margin:30px auto;
+    margin:20px auto;
     background-color: yellow;
     border-radius: 10px;
     padding: 20px;
@@ -17,7 +17,7 @@ body{
     border: red;
     border-style: dashed;
     border-width: 10px;
-    animation: pulsateBorder 2s infinite;
+    animation: pulsateBorder 2s infinite;  
 }
 
 @keyframes pulsateBorder {
@@ -93,30 +93,26 @@ footer{
 /* Media Queries for Responsive Design */
 @media screen and (max-width: 576px) { 
     body {
-        padding: 10px;
+        padding: auto;
     }
     .calculator {
         width: 100%;
         margin-left: 0;
         margin-right: 0;
     }
-    #result {
+    /* #result {
         font-size: 16px;
     }
     button {
         font-size: 16px; 
         padding: 10px;
-    }
+    } */
 }
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
     .calculator {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
+        margin: 5px auto;
+       
     }
 }
-
-
-
- 
