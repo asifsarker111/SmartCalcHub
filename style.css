@@ -90,29 +90,3 @@ footer{
     font-weight: bold;
 }
 
-/* Media Queries for Responsive Design */
-@media screen and (max-width: 576px) { 
-    body {
-        padding: auto;
-    }
-    .calculator {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    /* #result {
-        font-size: 16px;
-    }
-    button {
-        font-size: 16px; 
-        padding: 10px;
-    } */
-}
-
-@media screen and (min-width: 577px) and (max-width: 992px) {
-    .calculator {
-        width: 100%;
-        margin: 5px auto;
-       
-    }
-}
