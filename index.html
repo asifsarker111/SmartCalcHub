@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Calculator Application</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>&rightarrow;Calculator App</h1>
+    <input type="text" id="result" readonly aria-label="Result" placeholder="0">
+
+    <div class="Keypad">
+        <button onclick="clearResult()" class="resetBtn">C</button>
+        <button onclick="deleteCharacter()" class="delBtn">&larr;</button>
+        <br>
+        <button onclick="appendToResult('/')" area-label="Divide" class="opBtn">/</button>
+        <button onclick="appendToResult('7')">7</button>
+        <button onclick="appendToResult('8')">8</button>
+        <button onclick="appendToResult('9')">9</button>
+        <button onclick="appendToResult('*')" area-label="Multiply" class="opBtn">*</button>
+        <button onclick="appendToResult('4')">4</button>
+        <button onclick="appendToResult('5')">5</button>
+        <button onclick="appendToResult('6')">6</button>
+        <button onclick="appendToResult('-')" area-label="Substrack" class="opBtn">-</button>
+        <button onclick="appendToResult('1')">1</button>
+        <button onclick="appendToResult('2')">2</button>
+        <button onclick="appendToResult('3')">3</button>
+        <button onclick="appendToResult('+')" area-label="Add" class="opBtn">+</button>
+        <button onclick="appendToResult('0')">0</button>
+        <button onclick="appendToResult('.')">.</button>
+        <br>
+        <button onclick="calculateResult()" area-label="Equals" class="opBtn">=</button>
+    </div>
+    </div>
+    <br>
+    <footer>
+        &OpenCurlyDoubleQuote; Crafted with &hearts; by Asif &copy; AsifMathGenius - Making Math Magic since 2024 ✨ &CloseCurlyDoubleQuote;
+    </footer>
+
+    <!-- adding javascript file: -->
+     <script src="script.js"></script>
+     
+</body>
+</html>
