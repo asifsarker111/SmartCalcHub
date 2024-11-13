@@ -1,92 +1,93 @@
-body{
-    display: grid;
-    justify-content: center;
-    align-items: center;
+html {
+    box-sizing: border-box;
     height: 100%;
-    width: 100%;
-    background-image: url('./images/bg.png');
-
-}
-.calculator{
-    margin:20px auto;
-    background-color: yellow;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 10px 10px 10px 10px rgba(83, 111, 223, 0.806);
-    width: 250px;
-    border: red;
-    border-style: dashed;
-    border-width: 10px;
-    animation: pulsateBorder 2s infinite;  
 }
 
-@keyframes pulsateBorder {
-    0%{
-        border-color: red;
-        background-color: lightseagreen;
-    }
-    50%{
-        border-color: black; 
-        background-color: lightcoral;    
-    }
-    100%{
-        border-color: purple;
-        background-color: lightskyblue;
-    }
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
-#result{
-    width: 90%;
-    margin-bottom: 10px;
-    padding: 10px;
-    font-size: 18px;
-    background-color: skyblue;
-    font-weight: bold;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    border-radius: 10px;
-}
-
-.Keypad{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 5px;
-}
-
-button{
-    padding: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: black;
-    color: white;
-    border-radius: 100%;
-    cursor: pointer;
-    box-shadow: 2px 2px 2px 2px rgba(83, 111, 223, 0.806);
-}
-button:hover {
-    background-color: blue;
-    color: white;
-}
-.resetBtn{
-    color: red;
-    font-weight: bold;
-}
-.deletBtn{
-    color: yellow;
-    font-weight: bold;
-}
-.opBtn{
-    color: blue;
-    font-weight: bold;
-}
-footer{
+body {
+    align-items: center;
+    background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
     display: flex;
+    font-family: 'Dosis', sans-serif;
+    font-display: swap;
+    height: inherit;
     justify-content: center;
-    text-align: center;
-    width: 100%;
-    background-color: bisque;
-    font-size: 20px;
-    animation: pulsateBorder 2s infinite;
-    font-weight: bold;
 }
 
+.wrapper {
+    backdrop-filter: blur(5.5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    background: rgba(255, 255, 255, 0.30);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 35px;
+}
+
+.screen {
+    backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 326px;
+}
+
+.calc-button-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.calc-button {
+    backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(35, 35, 35, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 24px;
+    height: 65px;
+}
+
+.calc-button:last-child {
+    background: #d72889;
+    color: #fff;
+}
+
+.calc-button:last-child:hover {
+    background-color: inherit;
+    color: inherit;
+}
+
+.calc-button:hover {
+    background-color: inherit;
+}
+
+.calc-button:active {
+    background-color: #ffef78;
+}
+
+.double {
+    flex-basis: 47%;
+}
+
+.triple {
+    flex-basis: 73%;
+}
